@@ -1,0 +1,41 @@
+# Simple Food Ordering Chatbot
+
+import random
+
+# chatbot responses
+menu = {
+    "pizza": 120,
+    "burger": 80,
+    "sandwich": 60,
+    "coffee": 40
+}
+
+print("------ Food Chatbot ------")
+print("Menu:")
+for item, price in menu.items():
+    print(item, "=", price)
+
+total = 0
+
+while True:
+
+    order = input("\nEnter food name (or type exit): ").lower()
+
+    if order == "exit":
+        break
+
+    if order in menu:
+
+        qty = int(input("Enter quantity: "))
+
+        bill = menu[order] * qty
+        total += bill
+
+        print("Added Successfully!")
+        print("Item Cost =", bill)
+
+    else:
+        print("Sorry! Item not available.")
+
+print("\nTotal Bill =", total)
+print("Thank you for ordering!")
