@@ -41,3 +41,33 @@ start = input("Enter start node: ")
 
 print("MST Traversal:")
 prim(graph, start)
+
+
+-----------------------Output---------------------
+Enter number of nodes: 4
+
+Enter node: A
+Enter edges for A: 2
+Neighbor: B
+Weight: 2
+Neighbor: C
+Weight: 3
+
+Enter node: B
+Enter edges for B: 2
+Neighbor: A
+Weight: 2
+Neighbor: C
+Weight: 1
+
+Enter node: C
+Enter edges for C: 2
+Neighbor: A
+Weight: 3
+Neighbor: B
+Weight: 1
+
+Enter node: D
+Enter edges for D: 0
+
+Enter start node: A
